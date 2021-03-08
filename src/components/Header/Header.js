@@ -1,16 +1,16 @@
 import React from 'react';
-import { Nav, Navbar, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown, Form, FormControl, Button, Jumbotron } from 'react-bootstrap';
 
 const Header = () => {
     return (
         <div>
-            <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="#home">BBC</Navbar.Brand>
+            <Navbar bg="success" expand="lg">
+  <Navbar.Brand style={{fontSize:'25px'}} href="#home">BBC</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
       <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#link">Live</Nav.Link>
+      <Nav.Link href="#home">Live</Nav.Link>
       <NavDropdown title="Top News" id="basic-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Asia</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Europe</NavDropdown.Item>
@@ -25,10 +25,11 @@ const Header = () => {
     </Nav>
     <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-success">Search</Button>
+      <Button variant="outline-dark">Search</Button>
     </Form>
   </Navbar.Collapse>
 </Navbar>
+
         </div>
     );
 };

@@ -1,0 +1,13 @@
+.News{
+    height:490px;
+    width:445px;
+
+}
+
+.News img{
+    height: 100px;
+    width: 140px;
+}
+.News Button{
+    justify-content: end;
+}
